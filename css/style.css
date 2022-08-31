@@ -483,6 +483,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 5em 0em;
 }
 
 footer #footer {
