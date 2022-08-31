@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  user-select: none;
 }
 
 
@@ -13,6 +14,7 @@ a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
+
 }
 
 /* NAVBAR */
@@ -171,7 +173,7 @@ a {
 }
 
 #presentation .container-presentation .box-2 .btn {
-background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
+  background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
   font-size: 1.2em;
   padding: 2%;
   color: white;
@@ -370,11 +372,11 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:linear-gradient(rgba(21, 0, 83, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/1065538.jpg);
+  background: linear-gradient(rgba(21, 0, 83, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/1065538.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
- 
+
 
 }
 
@@ -382,17 +384,15 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
   font-weight: bolder;
   font-size: 2.5em;
   border-radius: 11px;
- color: #fff;
- background:rgba(0, 0, 0, 0.246);
- padding: 5px;
-
+  color: #fff;
+  background: rgba(0, 0, 0, 0.246);
+  padding: 5px;
 }
 
 #project .container-project {
   height: 30vh;
   width: 100%;
   padding: 5em 5em;
-
 }
 
 .card-project {
@@ -414,43 +414,37 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
 }
 
 @media (max-width:745px) and (max-height:353px) {
-
-  .card-project{
+  .card-project {
     height: 80vh;
   }
-
 }
 
-@media (max-width:600px){
-
-  .card-project{height: 50vh;
+@media (max-width:600px) {
+  .card-project {
+    height: 50vh;
     width: 90%;
   }
-
 }
 
-@media (min-height:900px){
+@media (min-height:900px) {
 
-  .card-project{
+  .card-project {
     height: 40vh;
   }
-  #project{
+
+  #project {
     height: 80vh;
   }
-
 }
 
-@media (max-height:550px){
-  #project{
+@media (max-height:550px) {
+  #project {
     height: 160vh;
   }
-  .card-project{
+
+  .card-project {
     height: 80vh;
-    
   }
-
- 
-
 }
 
 .card-project p {
@@ -458,7 +452,7 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
   padding: 5%;
   font-size: 90%;
   position: absolute;
-  top: 57%; 
+  top: 57%;
 }
 
 .git-btn {
@@ -479,9 +473,77 @@ background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
 
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Rodapé */
 
-
-footer{
+footer {
   background-image: linear-gradient(45deg, #000000 0%, #001225 50%, #00070a 100%);
-  height: 80vh;
+  color: #fff;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer #footer {
+  height: 30vh;
+  display: flex;
+  padding: 5em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+footer #footer .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer #footer .icons i {
+  margin-top: 1em;
+}
+
+
+footer #footer .redes-sociais {
+  display: flex;
+  font-size: 2em;
+}
+
+footer #footer .redes-sociais i {
+  margin: 0.30rem;
+  background-color: #1015345d;
+  padding: 0.3em;
+  border-radius: 20%;
+}
+
+footer #footer .redes-sociais a i:hover {
+  opacity: 0.6;
+}
+
+footer p {
+  text-align: center;
+  padding: 1.25em;
+  background-color: #000;
+}
+
+@media (max-width:680px) {
+footer{
+  font-size: 0.75em;
+}
+
+  footer #footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer #footer .icons {
+    align-items: flex-start;
+    margin-bottom: 2em;
+  }
+
+  footer #footer .redes-sociais {
+    align-items: flex-start;
+  }
 }
